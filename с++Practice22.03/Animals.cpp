@@ -109,7 +109,7 @@ Dog::Dog(Dog&& dog): Animal(std::move(dog)), race(dog.race) {
 Dog::Dog(const Dog& dog) :Animal(dog), race(dog.race) {}
 
 void Dog::WhatDoesSay() const {
-    std::cout << "собака говорит: \" гав \"" << std::endl;
+    std::cout << "The dog says: \"woof\"" << std::endl;
 }
 Dog::~Dog() {}
 
